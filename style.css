@@ -6,6 +6,9 @@ body {
     padding: 0px;
     font-family: 'Poppins', sans-serif;
 }
+/*-------------
+ banner style
+--------------- */
 
 .full-banner {
     display: flex;
@@ -70,6 +73,9 @@ body {
     margin-top: 60px;
     width: 100%;
 }
+/* -----------------
+side menu style
+-------------------- */
 .side-menu{
     background-color: black;
     border-radius: 10px;
@@ -101,6 +107,9 @@ body {
     color: white;
     background-color: red;
 }
+/*------------------
+ player card style
+--------------------- */
 .match-summary{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -150,7 +159,9 @@ body {
     display: none;
 }
 
-/* footer style */
+/* -------------
+footer style 
+----------------*/
 .footer{
     background-color: black;
     height: 400px;
@@ -176,12 +187,17 @@ body {
     color: white;
 }
 
-/* match schedule style */
+/* -------------------
+match schedule style
+----------------------- */
 .match{
     border: 1px solid gray;
     height: 250px;
     width: 250px;
 }
+/*-------------------
+ social icon style
+--------------------- */
 .social-icon{
     display: flex;
     align-items: center;
@@ -194,9 +210,9 @@ body {
 
 
 
-/*--------------- ---------------
-responsive style for mobile view
---------------------------------- */
+/*-------------------------------------------
+media queries responsive style for mobile view
+--------------------------------------------- */
 @media only screen and (max-width: 688px){
     .banners{
         display: flex;
@@ -253,9 +269,9 @@ responsive style for mobile view
     }
 }
 
-/*--------------- ---------------
-responsive style for tablet view
---------------------------------- */
+/*---------------------------------------------
+media quieries responsive style for tablet view
+--------------------------------------------- */
 @media only screen and (min-width: 688px) and (max-width: 992px){
     
     .container{
@@ -305,6 +321,6 @@ responsive style for tablet view
         border-radius: 10px;
     }
 }
-/*-------------------- 
-  responsive style end
------------------------ */
+/*--------------------------------- 
+ media queries responsive style end
+----------------------------------- */
