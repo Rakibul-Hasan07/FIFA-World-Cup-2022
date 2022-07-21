@@ -18,7 +18,7 @@ body {
 .banners{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: lightcyan;
     border-radius: 20px;
     display: flex;
     margin-top: 50px;
@@ -34,6 +34,7 @@ body {
     width: 50%;
     margin-top: 30px;
     margin-left: 50px;
+    margin-right: 40px;
 }
 .banner-image img{
     height: 100%;
@@ -41,26 +42,27 @@ body {
 }
 
 .banner-title {
-    color: white;
+    color: black;
     font-weight: 600px;
     font-size: 70px;
     
 }
 
 .banner-text {
-    color: white;
+    color: black;
 }
 .button{
     background-color: red;
-    padding: 15px 35px;
+    padding: 15px 25px;
     border-radius: 10px;
+    border: 0px;
     color: white;
     margin-bottom: 40px;
-    transition: width 3s, height 3s;
+    width: 180px;
+    transition: width 2s;
 }
 .button:hover{
     background-color: goldenrod;
-    height: 40px;
     width: 200px;
 }
 .fa-greater-than{
@@ -77,17 +79,20 @@ body {
 side menu style
 -------------------- */
 .side-menu{
-    background-color: black;
+    background-color: lightgreen;
     border-radius: 10px;
     height: 250px;
-    width: 25%;
+    width: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .menu a{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
 }
 .anchor:focus{
@@ -101,6 +106,7 @@ side menu style
     border-radius: 5px;
     padding: 10px 30px;
     margin-bottom: 20px;
+    width: 150px;
 }
 
 #blog-color{
@@ -119,9 +125,10 @@ side menu style
 .all-blog{
     border: 1px solid gray;
     border-radius: 12px;
-    width: 300px;
+    width: auto;
     height:400px;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .all-blog .player-image img{
@@ -155,6 +162,13 @@ side menu style
     margin-bottom: 40px;
     
 }
+.flag-align{
+    display: flex;
+    align-items: center;
+}
+#vs-gap{
+    margin: 0px 10px;
+}
 .view-button{
     display: none;
 }
@@ -163,7 +177,7 @@ side menu style
 footer style 
 ----------------*/
 .footer{
-    background-color: black;
+    background-color: lightblue;
     height: 400px;
     width: 100%;
 }
@@ -176,7 +190,7 @@ footer style
     margin: 50px 0px;
 }
 .goal-text{
-    color: white;
+    color: black;
 }
 .secure-part{
     display: flex;
@@ -184,7 +198,7 @@ footer style
     margin-top: 40px;
 }
 .secure-part p{
-    color: white;
+    color: black;
 }
 
 /* -------------------
@@ -204,10 +218,8 @@ match schedule style
     justify-content: center;
 }
 .social-icon i{
-    background-color: white;
     margin: 40px 20px;
 }
-
 
 
 /*-------------------------------------------
@@ -251,7 +263,7 @@ media queries responsive style for mobile view
         grid-template-columns: repeat(1, 1fr);
     }
     .all-blog{
-        width: 100%;
+        width: auto;
     }
     .match-schedule{
         display: grid;
@@ -273,7 +285,10 @@ media queries responsive style for mobile view
 media quieries responsive style for tablet view
 --------------------------------------------- */
 @media only screen and (min-width: 688px) and (max-width: 992px){
-    
+    .button:hover{
+        background-color: goldenrod;
+        width: 200px;
+    }
     .container{
         display: flex;
         flex-direction: column;
@@ -293,9 +308,9 @@ media quieries responsive style for tablet view
     .anchor{
         border: 1px solid gray;
         border-radius: 10px;
-        padding: 10px 60px;
+        padding: 10px 40px;
         margin-bottom: 20px;
-        margin-left: 50px;
+        margin-left: 20px;
     }
     .match-summary{
         display: grid;
